@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kayla Krommer</title>
+
+    <link rel = 'stylesheet' type = 'text/css' href = 'KaylasWebsite.css'>
+    <script type = "text/javascript" src = 'KaylasWebsite.js'></script>
+    <script type = "text/javascript" src = "instafeed.js-master\instafeed.min.js"></script>
+    <link rel = 'stylesheet' href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+  </head>
+
+  <body>
+    <div class = "topNav" id = "myTopNav">
+      <a href = "KaylasWebsite_Home.html">Home</a>
+      <a href = "KaylasWebsite_Gallery.html">Gallery</a>
+      <a href = "#contact">Contact</a>
+      <a href = "http://www.salonla.com/profiles/KaylaKrommer.asp?LID=">Schedule an Appointment</a>
+      <a href = "javascript:void(0);" class = "icon" onclick = "showNavBar()">&#9776;</a>
+    </div>
+    <div class = "instafeed" id="instafeed"></div>
+    <script type="text/javascript">
+      var userFeed = new Instafeed({
+        get: 'user',
+        userId: '387740472',
+        clientId: '7fb12cc81960469aa4d4df49f24c2614',
+        accessToken: '387740472.7fb12cc.7c32face13744e4ea373f9d454e28500',
+        resolution: 'standard_resolution',
+        template: '<a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}" /></a>',
+        sortBy: 'most-recent',
+        limit: 20,
+        links: false,
+        /*
+        filter: function(image) {
+          return image.tags.indexOf('blessed') >= 0;
+        }*/
+      });
+      userFeed.run();
+    </script>
+  </body>
+  <footer>
+    <a href="https://www.facebook.com/kayla.krommer" class="fa fa-facebook"></a>
+    <a href="https://www.instagram.com/kaylakrommer/" class="fa fa-instagram"></a>
+  </footer>
+</html>
