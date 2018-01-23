@@ -1,29 +1,29 @@
 * {
-  border: 0;
-  margin: 0;
-  padding: 0; }
+    border: 0;
+    margin: 0;
+    padding: 0; }
 
 body {
-  display: none;
-  background-color: #FDF5F4;
-  opacity: 50%; }
+    display: none;
+    background-color: #FDF5F4;
+    opacity: 50%; }
 
 .pageFooter {
-  background-color: #E2866D;
-  color: #F4CBC6;
-  text-align: center;
-  left: 0;
-  bottom: 0;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  border-top: 2px solid #B4ADAF; }
+    background-color: #E2866D;
+    color: #F4CBC6;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border-top: 2px solid #B4ADAF; }
 
 header {
-  width: 90%;
-  margin: auto;
-  padding-top: 50px; }
-  header h1 {
+    width: 90%;
+    margin: auto;
+    padding-top: 50px; }
+header h1 {
     text-align: center;
     font-family: Garamond, sans-serif;
     font-size: 36px;
@@ -32,128 +32,128 @@ header {
     text-shadow: 2px 2px #B4ADAF; }
 
 hr {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  border: 0;
-  height: 0;
-  box-shadow: 0 0 10px 1px black;
-  border-bottom: 1px solid black;
-  width: 90%; }
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
+    height: 0;
+    box-shadow: 0 0 10px 1px black;
+    border-bottom: 1px solid black;
+    width: 90%; }
 
 hr.style-five:after {
-  /* Not really supposed to work, but does */
-  content: "\00a0";
-  /* Prevent margin collapse */ }
+    /* Not really supposed to work, but does */
+    content: "\00a0";
+    /* Prevent margin collapse */ }
 
 nav {
-  height: 10%;
-  width: 100%;
-  background: #E07A5F;
-  font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
-  font-size: 24px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 500;
-  line-height: 26.4px;
-  position: sticky;
-  top: 0;
-  border-bottom: 2px solid #B4ADAF;
-  z-index: 4; }
-  nav ul {
+    height: 10%;
+    width: 100%;
+    background: #E07A5F;
+    font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 26.4px;
+    position: sticky;
+    top: 0;
+    border-bottom: 2px solid #B4ADAF;
+    z-index: 4; }
+nav ul {
     padding: 0;
     margin: 0 auto;
     width: 900px;
     height: 40px; }
-  nav li {
+nav li {
     display: inline;
     float: left; }
-  nav a {
+nav a {
     color: #F4CBC6;
     display: inline-block;
     width: 150px;
     text-align: center;
     text-decoration: none;
     line-height: 40px; }
-  nav a:hover {
+nav a:hover {
     color: black; }
 
 nav a#pull {
-  display: none; }
+    display: none; }
 
 .parallaxPhotoZigZag {
-  background-image: url("Local_Images/ZigZagBackground.jpg");
-  height: 500px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
+    background-image: url("Local_Images/ZigZagBackground.jpg");
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
 
 .parallaxPhotoKayla {
-  background-image: url("Local_Images/IntroPhoto.jpg");
-  height: 500px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat; }
+    background-image: url("Local_Images/IntroPhoto.jpg");
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat; }
 
 .aboutMe {
-  border: solid #B4ADAF 3px;
-  width: 90%;
-  margin-top: 50px;
-  margin-left: 5%;
-  margin-right: 5%;
-  background-color: #F7EDF0; }
-  .aboutMe p {
+    border: solid #B4ADAF 3px;
+    width: 90%;
+    margin-top: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: #F7EDF0; }
+.aboutMe p {
     color: #C45159;
     font-size: 16pt;
     font-family: 'Original Surfer', cursive; }
-  .aboutMe h2 {
+.aboutMe h2 {
     font-family: 'Rouge Script', cursive;
     text-align: right; }
 
 .clearfix:before, .clearfix:after {
-  content: " ";
-  display: table; }
+    content: " ";
+    display: table; }
 
 .clearfix:after {
-  clear: both; }
+    clear: both; }
 
 .clearfix {
-  *zoom: 1; }
+    *zoom: 1; }
 
 .welcomeText {
-  color: #C45159;
-  text-align: center; }
+    color: #C45159;
+    text-align: center; }
 
 .fa {
-  padding: 10px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  margin: 2px 2px; }
-  .fa :hover {
+    padding: 10px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 2px 2px; }
+.fa :hover {
     opacity: 0.7; }
 
 #container {
-  width: 95%;
-  overflow: hidden;
-  margin: 25px auto;
-  z-index: -10; }
+    width: 95%;
+    overflow: hidden;
+    margin: 25px auto;
+    z-index: -10; }
 
 .gallery {
-  height: 500px;
-  width: 20000px;
-  margin-top: 50px;
-  overflow: hidden; }
-  .gallery .first {
+    height: 500px;
+    width: 20000px;
+    margin-top: 50px;
+    overflow: hidden; }
+.gallery .first {
     -webkit-animation: bannermove 30s linear infinite;
     -moz-animation: bannermove 30s linear infinite;
     -ms-animation: bannermove 30s linear infinite;
     -o-animation: bannermove 30s linear infinite;
     animation: bannermove 30s linear infinite; }
-  .gallery img {
+.gallery img {
     margin-top: 15px;
     height: 100%;
     width: auto;
@@ -163,7 +163,7 @@ nav a#pull {
     -o-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     transition: all 0.5s ease; }
-  .gallery img:hover {
+.gallery img:hover {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -o-transform: scale(1.1);
@@ -176,201 +176,226 @@ nav a#pull {
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2); }
 
 .services {
-  border: solid #B4ADAF 3px;
-  margin: 3% 5%;
-  background-color: #F7EDF0; }
-  .services .servicesInside {
+    border: solid #B4ADAF 3px;
+    margin: 3% 5%;
+    background-color: #F7EDF0; }
+.services .servicesInside {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; }
-  .services table {
+.services table {
     margin: 20px; }
-    .services table th {
-      font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
-      text-align: center;
-      font-size: 24px;
-      color: #F4AFAB; }
-    .services table td {
-      font-size: 18px;
-      margin: 2px;
-      color: #C45159; }
-      .services table td a {
-        color: #C45159; }
-  .services .services-text {
+.services table th {
+    font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+    text-align: center;
+    font-size: 24px;
+    color: #F4AFAB; }
+.services table td {
+    font-size: 18px;
+    margin: 2px;
+    color: #C45159; }
+.services table td a {
+    color: #C45159; }
+.services .services-text {
     text-align: center; }
 
 .contact {
-  background-color: #F7EDF0;
-  border: solid #B4ADAF 3px;
-  margin: 3% 5%; }
+    background-color: #F7EDF0;
+    border: solid #B4ADAF 3px;
+    margin: 3% 5%;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+.contact h3 {
+    font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+    text-align: center;
+    font-size: 20pt;
+    color: #F4AFAB;
+    border-bottom: 1px solid #E07A5F;
+    box-shadow: 0 4px 2px -2px gray; }
 
 label {
-  display: block;
-  margin-top: 20px;
-  letter-spacing: 2px; }
+    display: block;
+    margin-top: 20px;
+    letter-spacing: 2px; }
+
+.map_container {
+    margin: 10px auto;
+    width: 90%;
+    height: 100%; }
+
+#map {
+    width: 100%;
+    height: 500px;
+    margin: 10px auto;
+    float: left;
+    text-align: center;
+    justify-content: center; }
+
 
 .body {
-  display: block;
-  margin: 10px auto;
-  width: 576px;
-  max-width: 90%; }
+    display: block;
+    margin: 10px auto;
+    width: 576px;
+    max-width: 90%; }
 
 form {
-  margin: 0 auto;
-  width: 470px;
-  max-width: 90%; }
+    margin: 0 auto;
+    width: 470px;
+    max-width: 90%; }
 
 input, textarea {
-  width: 450px;
-  height: 30px;
-  max-width: 90%;
-  background: #efefef;
-  border: 1px solid #dedede;
-  padding: 10px;
-  margin-top: 3px;
-  font-size: 0.9em;
-  color: #3a3a3a;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px; }
+    width: 450px;
+    height: 30px;
+    max-width: 90%;
+    background: #efefef;
+    border: 1px solid #dedede;
+    padding: 10px;
+    margin-top: 3px;
+    font-size: 0.9em;
+    color: #3a3a3a;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; }
 
 textarea {
-  height: 213px; }
+    height: 213px; }
 
 input:focus, textarea:focus {
-  border: 1px solid #97d6eb; }
+    border: 1px solid #97d6eb; }
 
 #submit {
-  width: 200px;
-  height: 40px;
-  border: 0.5px solid black;
-  margin-top: 20px;
-  cursor: pointer; }
+    width: 200px;
+    height: 40px;
+    border: 0.5px solid black;
+    margin-top: 20px;
+    cursor: pointer; }
 
 #submit:hover {
-  opacity: .7; }
+    opacity: .7; }
 
 .fa-facebook {
-  background: #3B5998;
-  color: white; }
+    background: #3B5998;
+    color: white; }
 
 .fa-instagram {
-  background: #125688;
-  color: white; }
+    background: #125688;
+    color: white; }
 
 @keyframes "bannermove" {
-  0% {
-    margin-left: 0px; }
-  100% {
-    margin-left: -3106px; } }
+    0% {
+        margin-left: 0px; }
+    100% {
+        margin-left: -3106px; } }
 @-moz-keyframes bannermove {
-  0% {
-    margin-left: 0px; }
-  100% {
-    margin-left: -3106px; } }
+    0% {
+        margin-left: 0px; }
+    100% {
+        margin-left: -3106px; } }
 @-webkit-keyframes "bannermove" {
-  0% {
-    margin-left: 0px; }
-  100% {
-    margin-left: -3106px; } }
+    0% {
+        margin-left: 0px; }
+    100% {
+        margin-left: -3106px; } }
 @-ms-keyframes "bannermove" {
-  0% {
-    margin-left: 0px; }
-  100% {
-    margin-left: -3106px; } }
+    0% {
+        margin-left: 0px; }
+    100% {
+        margin-left: -3106px; } }
 @-o-keyframes "bannermove" {
-  0% {
-    margin-left: 0px; }
-  100% {
-    margin-left: -3106px; } }
+    0% {
+        margin-left: 0px; }
+    100% {
+        margin-left: -3106px; } }
 @media screen and (max-width: 900px) {
-  nav {
-    height: auto; }
+    nav {
+        height: auto; }
     nav ul {
-      width: 100%;
-      display: block;
-      height: auto; }
+        width: 100%;
+        display: block;
+        height: auto; }
     nav li {
-      width: 33%;
-      float: left;
-      position: relative; }
+        width: 33%;
+        float: left;
+        position: relative; }
     nav a {
-      text-align: left;
-      width: 100%;
-      text-indent: 25px; }
+        text-align: left;
+        width: 100%;
+        text-indent: 25px; }
 
-  .parallaxPhotoZigZag {
-    background-image: url("Local_Images/ZigZagBackground.jpg");
-    height: 300px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; }
+    .parallaxPhotoZigZag {
+        background-image: url("Local_Images/ZigZagBackground.jpg");
+        height: 300px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; }
 
-  .parallaxPhotoKayla {
-    background-image: url("Local_Images/IntroPhotoSmall.jpg");
-    height: 300px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat; }
+    .parallaxPhotoKayla {
+        background-image: url("Local_Images/IntroPhotoSmall.jpg");
+        height: 300px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat; }
 
-  .gallery {
-    height: 300px; }
+    .gallery {
+        height: 300px; }
     .gallery .first {
-      -webkit-animation: bannermove 60s linear infinite;
-      -moz-animation: bannermove 60s linear infinite;
-      -ms-animation: bannermove 60s linear infinite;
-      -o-animation: bannermove 60s linear infinite;
-      animation: bannermove 60s linear infinite; } }
+        -webkit-animation: bannermove 60s linear infinite;
+        -moz-animation: bannermove 60s linear infinite;
+        -ms-animation: bannermove 60s linear infinite;
+        -o-animation: bannermove 60s linear infinite;
+        animation: bannermove 60s linear infinite; } }
 @media only screen and (max-width: 490px) {
-  nav {
-    border-bottom: 0; }
+    nav {
+        border-bottom: 0; }
     nav ul {
-      display: none;
-      height: auto; }
+        display: none;
+        height: auto; }
     nav li {
-      width: 50%; }
+        width: 50%; }
 
-  nav a#pull {
-    display: block;
-    width: 100%;
-    position: relative; }
+    nav a#pull {
+        display: block;
+        width: 100%;
+        position: relative; }
 
-  nav a#pull:after {
-    content: "";
-    width: 30px;
-    height: 30px;
-    display: inline-block;
-    position: absolute;
-    right: 15px;
-    top: 10px; } }
+    nav a#pull:after {
+        content: "";
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        position: absolute;
+        right: 15px;
+        top: 10px; } }
 @media screen and (orientation: landscape) and (max-height: 490px) {
-  nav {
-    border-bottom: 0; }
+    nav {
+        border-bottom: 0; }
     nav ul {
-      display: none;
-      height: auto; }
+        display: none;
+        height: auto; }
     nav li {
-      width: 50%; }
+        width: 50%; }
 
-  nav a#pull {
-    display: block;
-    width: 100%;
-    position: relative; }
+    nav a#pull {
+        display: block;
+        width: 100%;
+        position: relative; }
 
-  nav a#pull:after {
-    content: "";
-    background: url("nav-icon.png") no-repeat;
-    width: 30px;
-    height: 30px;
-    display: inline-block;
-    position: absolute;
-    right: 15px;
-    top: 10px; } }
+    nav a#pull:after {
+        content: "";
+        background: url("nav-icon.png") no-repeat;
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        position: absolute;
+        right: 15px;
+        top: 10px; } }
 @media only screen and (max-width: 320px) {
-  nav li {
-    display: block;
-    float: none;
-    width: 100%; } }
+    nav li {
+        display: block;
+        float: none;
+        width: 100%; } }
 
 /*# sourceMappingURL=KaylasWebstie.css.map */
