@@ -27,7 +27,7 @@ header h1 {
     text-align: center;
     font-family: Garamond, sans-serif;
     font-size: 36px;
-    color: #E07A5F;
+    color: #E07A5F;ƒƒƒ
     letter-spacing: 5px;
     text-shadow: 2px 2px #B4ADAF; }
 
@@ -233,6 +233,13 @@ label {
     text-align: center;
     justify-content: center; }
 
+button {
+    margin: 2%;
+    justify-content: center;
+    min-width: 25%;
+    width: 60px;
+    height: 30px;
+    min-height: 15%; }
 
 .body {
     display: block;
@@ -241,12 +248,17 @@ label {
     max-width: 90%; }
 
 form {
+    display: block;
     margin: 0 auto;
-    width: 470px;
-    max-width: 90%; }
+    width: 700px;
+    max-width: 90%;
+    text-align: center; }
+
+fieldset {
+    margin: 0 auto;}
 
 input, textarea {
-    width: 450px;
+    width: 90%;
     height: 30px;
     max-width: 90%;
     background: #efefef;
