@@ -27,7 +27,7 @@ header h1 {
     text-align: center;
     font-family: Garamond, sans-serif;
     font-size: 36px;
-    color: #E07A5F;ƒƒƒ
+    color: #E07A5F;
     letter-spacing: 5px;
     text-shadow: 2px 2px #B4ADAF; }
 
@@ -306,27 +306,27 @@ input:focus, textarea:focus {
     0% {
         margin-left: 0px; }
     100% {
-        margin-left: -3106px; } }
+        margin-left: -3235px; } }
 @-moz-keyframes bannermove {
     0% {
         margin-left: 0px; }
     100% {
-        margin-left: -3106px; } }
+        margin-left: -3235px; } }
 @-webkit-keyframes "bannermove" {
     0% {
         margin-left: 0px; }
     100% {
-        margin-left: -3106px; } }
+        margin-left: -3235px; } }
 @-ms-keyframes "bannermove" {
     0% {
         margin-left: 0px; }
     100% {
-        margin-left: -3106px; } }
+        margin-left: -3235px; } }
 @-o-keyframes "bannermove" {
     0% {
         margin-left: 0px; }
     100% {
-        margin-left: -3106px; } }
+        margin-left: -3235px; } }
 @media screen and (max-width: 900px) {
     nav {
         height: auto; }
@@ -357,6 +357,32 @@ input:focus, textarea:focus {
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat; }
+
+    @keyframes "bannermove" {
+        0% {
+            margin-left: 0px; }
+        100% {
+            margin-left: -2050px; } }
+    @-moz-keyframes bannermove {
+        0% {
+            margin-left: 0px; }
+        100% {
+            margin-left: -2050px; } }
+    @-webkit-keyframes "bannermove" {
+        0% {
+            margin-left: 0px; }
+        100% {
+            margin-left: -2050px; } }
+    @-ms-keyframes "bannermove" {
+        0% {
+            margin-left: 0px; }
+        100% {
+            margin-left: -2050px; } }
+    @-o-keyframes "bannermove" {
+        0% {
+            margin-left: 0px; }
+        100% {
+            margin-left: -2050px; } }
 
     .gallery {
         height: 300px; }
