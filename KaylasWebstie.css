@@ -343,21 +343,6 @@ input:focus, textarea:focus {
         width: 100%;
         text-indent: 25px; }
 
-    .parallaxPhotoZigZag {
-        background-image: url("Local_Images/ZigZagBackground.jpg");
-        height: 300px;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover; }
-
-    .parallaxPhotoKayla {
-        background-image: url("Local_Images/IntroPhotoSmall.jpg");
-        height: 300px;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat; }
-
     @keyframes "bannermove" {
         0% {
             margin-left: 0px; }
@@ -413,7 +398,25 @@ input:focus, textarea:focus {
         display: inline-block;
         position: absolute;
         right: 15px;
-        top: 10px; } }
+        top: 10px; }
+
+    .parallaxPhotoZigZag {
+        height: 0px;
+        background-attachment: initial;
+        background-position: initial;
+        background-repeat: initial;
+        background-size: initial; }
+
+    .parallaxPhotoKayla {
+        background-image: url("Local_Images/IntroPhotoSmall.jpg");
+        height: 400px;
+        max-width: 380px;
+        margin: auto;
+        background-attachment: initial;
+        background-position: initial;
+        background-repeat: initial;
+        background-size: initial; }
+}
 @media screen and (orientation: landscape) and (max-height: 490px) {
     nav {
         border-bottom: 0; }
