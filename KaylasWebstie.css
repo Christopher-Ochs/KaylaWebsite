@@ -38,8 +38,8 @@ hr {
     margin-right: auto;
     border: 0;
     height: 0;
-    box-shadow: 0 0 10px 1px black;
-    border-bottom: 1px solid black;
+    /*box-shadow: 0 0 10px 1px black;
+    border-bottom: 1px solid black;*/
     width: 90%; }
 
 hr.style-five:after {
@@ -103,6 +103,7 @@ nav a#pull {
     margin-top: 50px;
     margin-left: 5%;
     margin-right: 5%;
+    padding: 5px;
     background-color: #F7EDF0; }
 .aboutMe p {
     color: #C45159;
