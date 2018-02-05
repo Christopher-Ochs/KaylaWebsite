@@ -102,8 +102,8 @@ nav a#pull {
     border: solid #B4ADAF 3px;
     width: 90%;
     margin-top: 50px;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: auto;
+    margin-right: auto;
     padding: 5px;
     background-color: #F7EDF0; }
 .aboutMe p {
@@ -255,6 +255,10 @@ button:hover {
     margin: 10px auto;
     width: 576px;
     max-width: 90%; }
+
+#honeypot {
+    display: none;
+}
 
 form {
     display: block;
