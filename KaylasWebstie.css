@@ -22,7 +22,7 @@ body {
 header {
     width: 90%;
     margin: auto;
-    padding-top: 50px; }
+    padding-top: 85px; }
 header h1 {
     text-align: center;
     font-family: Garamond, sans-serif;
@@ -48,7 +48,7 @@ hr.style-five:after {
     /* Prevent margin collapse */ }
 
 nav {
-    height: 10%;
+    height: 40px;
     width: 100%;
     background: #E07A5F;
     font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
@@ -56,11 +56,12 @@ nav {
     font-style: normal;
     font-variant: normal;
     font-weight: 500;
-    line-height: 26.4px;
-    position: sticky;
+    line-height: 26px;
+    position: fixed;
+    left: 0;
     top: 0;
     border-bottom: 2px solid #B4ADAF;
-    z-index: 4; }
+    z-index: 999; }
 nav ul {
     padding: 0;
     margin: 0 auto;
@@ -101,8 +102,8 @@ nav a#pull {
     border: solid #B4ADAF 3px;
     width: 90%;
     margin-top: 50px;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: auto;
+    margin-right: auto;
     padding: 5px;
     background-color: #F7EDF0; }
 .aboutMe p {
@@ -254,6 +255,10 @@ button:hover {
     margin: 10px auto;
     width: 576px;
     max-width: 90%; }
+
+#honeypot {
+    display: none;
+}
 
 form {
     display: block;
