@@ -107,8 +107,8 @@ nav a#pull {
     background-color: #F7EDF0; }
 .aboutMe p {
     color: #C45159;
-    font-size: 16pt;
-    font-family: 'Original Surfer', cursive; }
+    font-size: 18pt;
+    font-family: 'Original Surfer'; }
 .aboutMe h2 {
     font-family: 'Rouge Script', cursive;
     text-align: right; }
@@ -373,11 +373,11 @@ input:focus, textarea:focus {
     .gallery {
         height: 300px; }
     .gallery .first {
-        -webkit-animation: bannermove 60s linear infinite;
-        -moz-animation: bannermove 60s linear infinite;
-        -ms-animation: bannermove 60s linear infinite;
-        -o-animation: bannermove 60s linear infinite;
-        animation: bannermove 60s linear infinite; } }
+        -webkit-animation: bannermove 50s linear infinite;
+        -moz-animation: bannermove 50s linear infinite;
+        -ms-animation: bannermove 50s linear infinite;
+        -o-animation: bannermove 50s linear infinite;
+        animation: bannermove 50s linear infinite; } }
 @media only screen and (max-width: 490px) {
     nav {
         border-bottom: 0; }
