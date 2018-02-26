@@ -8,19 +8,21 @@ $(function() {
     var $window = $(window);
     var iScrollPos = 0;
 
-    $(window).scroll(function () {
-        var iCurScrollPos = $(this).scrollTop();
-        // Scrolling down
-        console.log(iCurScrollPos-iScrollPos);
-        if (iCurScrollPos-iScrollPos > 25) {
-            $('#pull').slideUp();
-        }
-        // Scrolling up
-        else if ((iCurScrollPos-iScrollPos) < -25){
-            $('#pull').slideDown();
-        }
-        iScrollPos = iCurScrollPos;
-    });
+    // Only want to happen in mobile
+    if(w < 490 || h < 490) {
+        $(window).scroll(function () {
+            var iCurScrollPos = $(this).scrollTop();
+            // Scrolling down
+            if (iCurScrollPos - iScrollPos > 25) {
+                $('#pull').slideUp();
+            }
+            // Scrolling up
+            else if ((iCurScrollPos - iScrollPos) < -25) {
+                $('#pull').slideDown();
+            }
+            iScrollPos = iCurScrollPos;
+        });
+    }
 
     $('#pull').on('click', function(e) {
         e.preventDefault();
