@@ -1,9 +1,25 @@
 $(function() {
     $(document.body).fadeIn(2000);
-    //var pull = $('#pull');
     var remove =$('#remove');
     var menu = $('nav ul');
-    //menuHeight	= menu.height();
+    var prev = 0;
+    var w = $(window).width();
+    var h = $(window).height();
+    var $window = $(window);
+    var iScrollPos = 0;
+
+    $(window).scroll(function () {
+        var iCurScrollPos = $(this).scrollTop();
+        // Scrolling down
+        if (iCurScrollPos > iScrollPos) {
+            $('#pull').slideUp();
+        }
+        // Scrolling up
+        else {
+            $('#pull').slideDown();
+        }
+        iScrollPos = iCurScrollPos;
+    });
 
     $('#pull').on('click', function(e) {
         e.preventDefault();
@@ -11,19 +27,12 @@ $(function() {
     });
 
     $('.remove').on('click', function(d) {
-        //d.preventDefault();
-        var w = $(window).width();
-        var h = $(window).height();
         if(w < 490 || h < 490){
-            // Store hash
             if (this.hash !== "") {
                 var hash = this.hash;
-                // Using jQuery's animate() method to add smooth page scroll
-                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
                 $('html, body').animate({
                     scrollTop: $(hash).offset().top
                 }, 800, function(){
-                    // Add hash (#) to URL when done scrolling (default click behavior)
                     window.location.hash = hash;
                     menu.slideUp();
                 });
@@ -31,18 +40,11 @@ $(function() {
         } // End if
         else {
             if (this.hash !== "") {
-                // Prevent default anchor click behavior
                 d.preventDefault();
-
-                // Store hash
                 var hash = this.hash;
-
-                // Using jQuery's animate() method to add smooth page scroll
-                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
                 $('html, body').animate({
                     scrollTop: $(hash).offset().top
                 }, 800, function(){
-                    // Add hash (#) to URL when done scrolling (default click behavior)
                     window.location.hash = hash;
                 });
             }
@@ -56,6 +58,8 @@ $(function() {
         }
     });
 });
+
+
 
 function initMap() {
     var uluru = {lat: 39.146181, lng: -84.448497};
