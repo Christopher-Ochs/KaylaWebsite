@@ -11,11 +11,12 @@ $(function() {
     $(window).scroll(function () {
         var iCurScrollPos = $(this).scrollTop();
         // Scrolling down
-        if (iCurScrollPos > iScrollPos) {
+        console.log(iCurScrollPos-iScrollPos);
+        if (iCurScrollPos-iScrollPos > 25) {
             $('#pull').slideUp();
         }
         // Scrolling up
-        else {
+        else if ((iCurScrollPos-iScrollPos) < -25){
             $('#pull').slideDown();
         }
         iScrollPos = iCurScrollPos;
