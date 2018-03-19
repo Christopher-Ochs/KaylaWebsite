@@ -54,6 +54,18 @@ $(function() {
         } // End if
     });
 
+    // Append available date to end of link in services
+    var availableDAte = getNextDates();
+    var aLink = document.getElementById('servicesLinks').getElementsByTagName('a');
+    var aLength = aLink.length;
+    var providerID = '/provider/580163';
+
+    for( var i = 0; i < aLength; i++) {
+        aLink[i].href += (availableDAte + providerID);
+    }
+
+
+
     $(window).resize(function(){
         var w = $(window).width();
         if(w > 320 && menu.is(':hidden')) {
@@ -62,7 +74,47 @@ $(function() {
     });
 });
 
+// gets month in two digit string
+function getTwoDigitMonth(date) {
+    var month = date.getMonth();
+    month += 1 ;
+    if (month < 10) {
+        var monthString = month.toString();
+        return '0' + monthString;
+    }
+    return month.toString();
+}
 
+// function to return date of next wednesday, thursday, or saturday
+// testing hyper link = https://go.booker.com/#/location/SalonLA/service/2331430/Womens%20Haircut/availability/2018-03-21/provider/580163
+function getNextDates() {
+    var validDays = new Array(3, 4, 6);
+    var date = new Date();
+    var today = date.getDay();
+    var year = (date.getFullYear()).toString();
+    var month = getTwoDigitMonth(date);
+    var dateOfMonth = (date.getDate().toString());
+    var returnDate = year + '-' + month + '-' + dateOfMonth;
+    if (validDays.indexOf(today) !== -1) {
+        return returnDate;
+    }
+    else if(today === 0 || today === 1 || today === 2){
+        date.setDate(date.getDate()+(3-today));
+        year = (date.getFullYear()).toString();
+        month = getTwoDigitMonth(date);
+        dateOfMonth = (date.getDate().toString());
+        returnDate = year + '-' + month + '-' + dateOfMonth;
+        return returnDate;
+    }
+    else {
+        date.setDate(date.getDate() + 1);
+        year = (date.getFullYear()).toString();
+        month = getTwoDigitMonth(date);
+        dateOfMonth = (date.getDate().toString());
+        returnDate = year + '-' + month + '-' + dateOfMonth;
+        return returnDate;
+    }
+}
 
 function initMap() {
     var uluru = {lat: 39.146181, lng: -84.448497};
@@ -79,7 +131,7 @@ function initMap() {
     });
 }
 
-function validEmail(email) { // see:
+function validEmail(email) {
     var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
     return re.test(email);
 }
@@ -110,16 +162,10 @@ function getFormData() {
     var data = {};
     fields.forEach(function(k){
         data[k] = elements[k].value;
-        var str = ""; // declare empty string outside of loop to allow
-                      // it to be appended to for each item in the loop
-        if(elements[k].type === "checkbox"){ // special case for Edge's html collection
-            str = str + elements[k].checked + ", "; // take the string and append
-                                                    // the current checked value to
-                                                    // the end of it, along with
-                                                    // a comma and a space
-            data[k] = str.slice(0, -2); // remove the last comma and space
-                                        // from the  string to make the output
-                                        // prettier in the spreadsheet
+        var str = "";
+        if(elements[k].type === "checkbox"){
+            str = str + elements[k].checked + ", ";
+            data[k] = str.slice(0, -2);
         }else if(elements[k].length){
             for(var i = 0; i < elements[k].length; i++){
                 if(elements[k].item(i).checked){
@@ -139,28 +185,26 @@ function getFormData() {
     return data;
 }
 
-function handleFormSubmit(event) {  // handles form submit withtout any jquery
-    event.preventDefault();           // we are submitting via xhr below
-    var data = getFormData();         // get the values submitted in the form
+function handleFormSubmit(event) {
+    event.preventDefault();
+    var data = getFormData();
 
-    if (validateHuman(data.honeypot)) {  //if form is filled, form will not be submitted
+    if (validateHuman(data.honeypot)) {
       return false;
     }
 
-
-    if( !validEmail(data.email) ) {   // if email is not valid show error
+    if( !validEmail(data.email) ) {
         document.getElementById('email-invalid').style.display = 'block';
         return false;
     } else {
-        var url = event.target.action;  //
+        var url = event.target.action;
         var xhr = new XMLHttpRequest();
         xhr.open('POST', url);
-        // xhr.withCredentials = true;
         xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
         xhr.onreadystatechange = function() {
-            console.log( xhr.status, xhr.statusText )
+            console.log( xhr.status, xhr.statusText );
             console.log(xhr.responseText);
-            document.getElementById('gform').style.display = 'none'; // hide form
+            document.getElementById('gform').style.display = 'none';
             document.getElementById('thankyou_message').style.display = 'block';
             return;
         };
