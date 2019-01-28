@@ -88,13 +88,14 @@ function getTwoDigitMonth(date) {
 // function to return date of next wednesday, thursday, or saturday
 // testing hyper link = https://go.booker.com/#/location/SalonLA/service/2331430/Womens%20Haircut/availability/2018-03-21/provider/580163
 function getNextDates() {
-    var validDays = new Array(3, 4, 6);
+    var validDays = [3, 4, 5, 6];
     var date = new Date();
     var today = date.getDay();
     var year = (date.getFullYear()).toString();
     var month = getTwoDigitMonth(date);
     var dateOfMonth = (date.getDate().toString());
     var returnDate = year + '-' + month + '-' + dateOfMonth;
+    // Simply return today's date
     if (validDays.indexOf(today) !== -1) {
         return returnDate;
     }
