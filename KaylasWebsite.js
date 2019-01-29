@@ -40,7 +40,7 @@ $(function() {
                     menu.slideUp();
                 });
             }
-        } // End if
+        }
         else {
             if (this.hash !== "") {
                 d.preventDefault();
@@ -51,7 +51,7 @@ $(function() {
                     window.location.hash = hash;
                 });
             }
-        } // End if
+        }
     });
 
     // Append available date to end of link in services
@@ -190,10 +190,12 @@ function handleFormSubmit(event) {
     event.preventDefault();
     var data = getFormData();
 
+    // Check if bot got the honey pot
     if (validateHuman(data.honeypot)) {
       return false;
     }
 
+    // Verify email is valid
     if( !validEmail(data.email) ) {
         document.getElementById('email-invalid').style.display = 'block';
         return false;
@@ -218,7 +220,6 @@ function handleFormSubmit(event) {
 }
 function loaded() {
     console.log('contact form submission handler loaded successfully');
-    // bind to the submit event of our form
     var form = document.getElementById('gform');
     form.addEventListener("submit", handleFormSubmit, false);
 };
